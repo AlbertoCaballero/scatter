@@ -5,9 +5,10 @@ let win;
 function createWindow() {
     //Create the browser window
     win = new BrowserWindow({
-        width: 600,
+        width: 720,
         height: 600,
-        backgroundColor: '#ffffff'
+        backgroundColor: '#ffffff',
+        icon: `file://${__dirname}/src/assets/icons/icon.png`
     })
 
     win.loadURL(`file://${__dirname}/dist/scatter-app/index.html`)
