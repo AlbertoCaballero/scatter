@@ -1,6 +1,6 @@
 # Scatter 0.0.2
 
-This project is intended to fill the gap betwen data science tools and general use office-like applications. Scatter offers a simple interface that allowsyou to create, manage and process dataset with out the insanity of learning how to and using data science apps like Jupyter, or the inflexibility and cluncynes of programs like excel.
+This project is intended to fill the gap betwen data science tools and general use office-like applications. Scatter offers a simple interface that allows you to create, manage and process dataset with out the insanity of learning how to and using data science apps like Jupyter, or the inflexibility and cluncynes of programs like excel.
 
 ## Platforms used
 
