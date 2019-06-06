@@ -6,19 +6,23 @@ import { AppComponent } from './app.component';
 import { DataviewerComponent } from './dataviewer/dataviewer.component';
 import { FormsModule } from '@angular/forms';
 import { DataviewerRowComponent } from './dataviewer-row/dataviewer-row.component';
+import { HttpUsageComponent } from './http-usage/http-usage.component';
+import { from } from 'rxjs';
+//import { HttpModule } from '@angular/core';
 //import { MatTableModule } from '@angular/core';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataviewerComponent,
-    DataviewerRowComponent
+    DataviewerRowComponent,
+    HttpUsageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
-    //MatTableModule
+    //HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
