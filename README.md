@@ -1,27 +1,19 @@
-# ScatterApp
+# Scatter 0.0.2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.0.
+This project is intended to fill the gap betwen data science tools and general use office-like applications. Scatter offers a simple interface that allows you to create, manage and process dataset with out the insanity of learning how to and using data science apps like Jupyter, or the inflexibility and cluncynes of programs like excel.
 
-## Development server
+![alt text](https://github.com/AlbertoCaballero/scatter/blob/master/src/assets/g1493.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Platforms used
 
-## Code scaffolding
+It's based on angular architecture, all the logic and main funtionality is developed using this principles so we get the same features in a web app as we do in a desktop app.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Running the development app
 
-## Build
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. This is for the angular web app.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `npm run electron-build` to compile and run the electron desktop aplication. Or only `npm run electron` to execute the last compiled version of the app.
 
-## Running unit tests
+# Disclaimer
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This is a really early prototype, its full of errors and it doesn have any of the most important functionality. 
