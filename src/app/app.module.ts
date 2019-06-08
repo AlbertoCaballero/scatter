@@ -8,8 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { DataviewerRowComponent } from './dataviewer-row/dataviewer-row.component';
 import { HttpUsageComponent } from './http-usage/http-usage.component';
 import { from } from 'rxjs';
-//import { HttpModule } from '@angular/core';
-//import { MatTableModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,8 +20,8 @@ import { from } from 'rxjs';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-    //HttpModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
