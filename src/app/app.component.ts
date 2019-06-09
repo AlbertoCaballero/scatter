@@ -27,12 +27,11 @@ export class AppComponent {
   ];
 
   displayedColumns: string[] = ['x', 'y'];
-  dataSource = this.Datapoints;
 
   public count: number = 0;
   public dataVisible: boolean = false;          //Toggels the data viewer
 
-  file: any;
+  private file: any;
   public content: any;
   public chartVisible: boolean = false;         //Toggels the chart and editing
 
@@ -40,7 +39,8 @@ export class AppComponent {
     this.file = e.target.files[0];
   }
 
-  uploadDocument(file) {
+  //Recives the document path from UI and reads it
+  uploadDocument() {
     let fileReader = new FileReader();
     fileReader.onload = (e) => {
       console.log(fileReader.result)
@@ -51,14 +51,15 @@ export class AppComponent {
   }
 
 
+  //Creation of the data visualization, charting the data
   createChart() {
-    //Creation of a new dataset
     this.chartVisible = !this.chartVisible
 
     var require : any;
     
-    var Chart = require('chart.js')
-    var ctx = document.getElementById('line-chart')
+    var Chart = require('chart.js');
+    var ctx = document.getElementById('line-chart');
+    
     new Chart(ctx, {
       type: 'line',
       data: {

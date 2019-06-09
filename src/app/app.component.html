@@ -1,6 +1,6 @@
 <app-http-usage></app-http-usage>
 <!--TODO: Change the ngIf once i finished with http-->
-<div class="header" *ngIf="!true">
+<div class="header" *ngIf="true">
   <h1>
     SCATTER
   </h1>
@@ -64,7 +64,7 @@
     </table>
     <h1>GRAPH</h1>
     <hr>
-    <canvas id="line-chart" width="600" height="450"></canvas>
+    <canvas id="line-chart" style="width: 500px; height: 500px;"></canvas>
     <textarea [(ngModel)]="content" style="width: 70%; height: 500px;"></textarea>
 </div>
 
