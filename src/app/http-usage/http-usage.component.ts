@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
-//import 'rxjs/add/operator/toPromise';
+import 'rxjs';
  
 @Component({
   selector: 'app-http-usage',
@@ -9,9 +9,14 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 })
 export class HttpUsageComponent implements OnInit {
 
-  //private client : HttpClient;
+  private ip : string;
 
-  constructor() { }
+  constructor(http : HttpClient) { 
+    http.get('http://httpbin.org/ip')
+        .toPromise()
+        .then(response => this.ip = response.json().origin)
+        .catch(error => console.log(error));
+  }
 
   ngOnInit() {
     
