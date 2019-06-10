@@ -9,6 +9,8 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 })
 export class HttpUsageComponent implements OnInit {
 
+  //private client : HttpClient;
+
   constructor() { }
 
   ngOnInit() {

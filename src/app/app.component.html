@@ -40,7 +40,7 @@
           <td>{{Datapoint.y}}</td>
         </tr>
     </table>
-    <button (click)="createChart()">
+    <button (click)="chartVisible = !chartVisible">
       EDIT
     </button>
 </div>
@@ -62,8 +62,12 @@
           </td>
         </tr>
     </table>
-    <h1>GRAPH</h1>
+    <!--TODO: This should show the graph-->
+    <button (click)="createChart()">
+      CREATE
+    </button>
     <hr>
+    <h1>GRAPH</h1>
     <canvas id="line-chart" style="width: 500px; height: 500px;"></canvas>
     <textarea [(ngModel)]="content" style="width: 70%; height: 500px;"></textarea>
 </div>
