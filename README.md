@@ -16,4 +16,4 @@ Run `npm run electron-build` to compile and run the electron desktop aplication.
 
 # Disclaimer
 
-This is a really early prototype, its full of errors and it doesn have any of the most important functionality. 
+This is a really early prototype, it's full of errors and it doesn have any of the most important functionality. 
