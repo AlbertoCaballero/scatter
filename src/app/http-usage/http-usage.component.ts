@@ -7,6 +7,7 @@ import 'rxjs';
   templateUrl: './http-usage.component.html',
   styleUrls: ['./http-usage.component.scss']
 })
+
 export class HttpUsageComponent implements OnInit {
 
   private ip : string;
@@ -14,8 +15,8 @@ export class HttpUsageComponent implements OnInit {
   constructor(http : HttpClient) { 
     http.get('http://httpbin.org/ip')
         .toPromise()
-        .then(response => this.ip = response.json().origin)
-        .catch(error => console.log(error));
+        //.then(response => this.ip = response.origin)
+        //.catch(error => console.log(error));
   }
 
   ngOnInit() {
