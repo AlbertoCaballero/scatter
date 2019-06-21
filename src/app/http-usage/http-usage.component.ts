@@ -10,13 +10,12 @@ import 'rxjs';
 
 export class HttpUsageComponent implements OnInit {
 
-  private ip : string;
+  private url : string = 'http://httpbin.org/ip';
+  private dataGet : any;
 
   constructor(http : HttpClient) { 
-    http.get('http://httpbin.org/ip')
-        .toPromise()
-        //.then(response => this.ip = response.origin)
-        //.catch(error => console.log(error));
+    this.dataGet = http.get(this.url);
+    console.log('Data: ', this.dataGet.origin);
   }
 
   ngOnInit() {
