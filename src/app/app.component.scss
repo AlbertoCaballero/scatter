@@ -1,21 +1,28 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Quicksand;
+}
+
 .header {
     text-align: center;
     width: 100%;
     height: 100%;
-    padding: 0% 0%;
+    padding: 5% 0;
 
     h1 {
-        font-family: 'Michroma', sans-serif;
-        font-size: 9em;
+        font-family: Quicksand;
+        letter-spacing: 20px;
+        font-size: 8em;
     }
 
     label {
         display: block;
         list-style: none;
-        font-family: 'Century Gothic';
+        font-family: Quicksand;
         font-weight: bold;
         line-height: 35px;
-        color: rgb(110, 110, 110);
+        color: rgb(66, 66, 66);
         
         label:hover {
             cursor: pointer;
@@ -31,7 +38,7 @@ button {
     padding: 10px 20px;
     background-color: black;
     color: white;
-    font-family: 'Century Gothic';
+    font-family: Quicksand;
     label:hover {
         cursor: pointer;
     }
@@ -45,7 +52,7 @@ th, td {
 table {
     width: 60%;
     margin: 0 20%;
-    font-family: 'Century Gothic';
+    font-family: Quicksand;
 }
 
 div {
@@ -56,6 +63,6 @@ div {
 }
 
 h1 {
-    font-family: 'Michroma', sans-serif;
+    font-family: Quicksand;
     font-size: 3em;
 }
