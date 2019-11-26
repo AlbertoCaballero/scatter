@@ -4,6 +4,8 @@ This project is intended to fill the gap betwen data science tools and general u
 
 ![alt text](https://github.com/AlbertoCaballero/scatter/blob/master/src/assets/g1493.png)
 
+![alt text](https://github.com/AlbertoCaballero/scatter/blob/master/src/assets/g1196.png)
+
 ## Platforms used
 
 It's based on angular architecture, all the logic and main funtionality is developed using this principles so we get the same features in a web app as we do in a desktop app.
