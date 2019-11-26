@@ -8,7 +8,7 @@ This project is intended to fill the gap betwen data science tools and general u
 
 ## Platforms used
 
-It's based on angular architecture, all the logic and main funtionality is developed using this principles so we get the same features in a web app as we do in a desktop app.
+It's based on angular architecture, all the logic and main functionality is developed using this principles so we get the same features in a web app as we do in a desktop app.
 
 ## Running the development app
 
